@@ -31,10 +31,12 @@ const Home = () => {
           </h1>
           <p className="mt-2 md:text-2xl">
             Software Engineer at{" "}
-            <FontAwesomeIcon
-              className="hover:text-[#ff9900] md:text-2xl"
-              icon={faAws}
-            />
+            <a href="https://aws.amazon.com/outposts" target="_blank">
+              <FontAwesomeIcon
+                className="hover:text-[#ff9900] md:text-2xl"
+                icon={faAws}
+              />
+            </a>
           </p>
           <ul className="text-gray-800">
             <li>M. Sc. Information Systems 🎓</li>
@@ -42,19 +44,31 @@ const Home = () => {
           </ul>
           <ul className="flex flex-row gap-x-2 text-xl text-gray-800">
             <li>
-              <FontAwesomeIcon
-                className="hover:text-[#0077B5]"
-                icon={faLinkedin}
-              />
+              <a
+                href="https://www.linkedin.com/in/philipp-page/"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  className="hover:text-[#0077B5]"
+                  icon={faLinkedin}
+                />
+              </a>
             </li>
             <li>
-              <FontAwesomeIcon className="hover:text-[#333]" icon={faGithub} />
+              <a href="https://github.com/phipag" target="_blank">
+                <FontAwesomeIcon
+                  className="hover:text-[#333]"
+                  icon={faGithub}
+                />
+              </a>
             </li>
             <li>
-              <FontAwesomeIcon
-                className="hover:text-[#1da1f2]"
-                icon={faTwitter}
-              />
+              <a href="https://twitter.com/PagePhilipp" target="_blank">
+                <FontAwesomeIcon
+                  className="hover:text-[#1da1f2]"
+                  icon={faTwitter}
+                />
+              </a>
             </li>
           </ul>
         </div>
