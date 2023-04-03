@@ -24,7 +24,7 @@ const Home = () => {
           alt="Philipp Page picture"
         />
         <div>
-          <h1 className="font-serif text-5xl font-extrabold">
+          <h1 className="text-5xl font-extrabold">
             Philipp
             <br />
             <span className="text-sky-700">Page</span>
@@ -42,7 +42,7 @@ const Home = () => {
             <li>M. Sc. Information Systems 🎓</li>
             <li>Based in Dublin 🇮🇪</li>
           </ul>
-          <ul className="flex flex-row gap-x-2 text-xl text-gray-800">
+          <ul className="flex flex-row gap-x-2 text-2xl text-gray-800">
             <li>
               <a
                 href="https://www.linkedin.com/in/philipp-page/"
