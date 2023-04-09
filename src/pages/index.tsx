@@ -22,6 +22,7 @@ const Home = () => {
           className="h-[15rem] w-[15rem] rounded-full drop-shadow-md"
           src={philippPageProfilePicture}
           alt="Philipp Page picture"
+          placeholder="blur"
         />
         <div>
           <h1 className="text-5xl font-extrabold">
