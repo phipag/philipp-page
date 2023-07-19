@@ -1,9 +1,4 @@
-import {
-  faAws,
-  faGithub,
-  faLinkedin,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { faAws, faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import philippPageProfilePicture from "../../public/images/philipp-page.jpeg";
@@ -36,10 +31,7 @@ export default function ContactCard() {
         <ul className="flex flex-row gap-x-2 text-2xl text-gray-800">
           <li>
             <a href="https://www.linkedin.com/in/philipp-page/" target="_blank">
-              <FontAwesomeIcon
-                className="hover:text-[#0077B5]"
-                icon={faLinkedin}
-              />
+              <FontAwesomeIcon className="hover:text-[#0077B5]" icon={faLinkedin} />
             </a>
           </li>
           <li>
@@ -49,10 +41,7 @@ export default function ContactCard() {
           </li>
           <li>
             <a href="https://twitter.com/PagePhilipp" target="_blank">
-              <FontAwesomeIcon
-                className="hover:text-[#1da1f2]"
-                icon={faTwitter}
-              />
+              <FontAwesomeIcon className="hover:text-[#1da1f2]" icon={faTwitter} />
             </a>
           </li>
         </ul>
