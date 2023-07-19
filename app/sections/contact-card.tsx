@@ -20,7 +20,7 @@ export default function ContactCard() {
         </h1>
         <p className="mt-2 md:text-2xl">
           Software Engineer at{" "}
-          <a href="https://aws.amazon.com/outposts" target="_blank">
+          <a href="https://aws.amazon.com/" target="_blank">
             <FontAwesomeIcon className="hover:text-[#ff9900]" icon={faAws} />
           </a>
         </p>
