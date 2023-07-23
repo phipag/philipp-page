@@ -2,6 +2,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { Metadata } from "next";
 import "./globals.css";
+import StickyNav from "./sticky-nav";
 
 config.autoAddCss = false;
 
@@ -18,6 +19,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
+        <nav>
+          <StickyNav />
+        </nav>
         <main className="flex min-h-screen flex-col">{children}</main>
       </body>
     </html>
