@@ -11,8 +11,8 @@ export default function Intro() {
         software that end-users as well as developers enjoy to use.
       </p>
       <p>
-        In over 5 years of professional working experience as a freelancer I consulted clients in building sustainable,
-        cost-efficient cloud-based software solutions to facilitate their business processes.
+        In over 5 years of professional working experience as a freelancer I have consulted clients in building
+        sustainable, cost-efficient cloud-based software solutions to facilitate their business processes.
         {/*TODO: Include references to a portfolio here.*/}
       </p>
       <p>
