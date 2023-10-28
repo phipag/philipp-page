@@ -40,7 +40,7 @@ DEVICE_OS_MAPPING: dict[str, str] = {
 }
 
 def get_device_os(device_name: str) -> str:
-  return device_os_mapping.get(device_name, "Unknown")
+  return DEVICE_OS_MAPPING.get(device_name, "Unknown")
 ```
 
 In this example, we replaced the static if-else statement by a re-usable configurable dictionary.
@@ -51,10 +51,10 @@ We can also use the dictionary for more than just translating a device name to a
 
 ```python
 def get_all_known_devices() -> list[str]:
-  return list(device_os_mapping.keys())
+  return list(DEVICE_OS_MAPPING.keys())
 
 def get_all_known_os() -> list[str]:
-  return list(device_os_mapping.values())
+  return list(DEVICE_OS_MAPPING.values())
 ```
 
 ## Bonus #2
@@ -77,10 +77,10 @@ DEVICE_OS_MAPPING: dict[str, OS] = {
 }
 
 def get_device_os(device_name: str) -> OS:
-  return device_os_mapping.get(device_name, OS.UNKNOWN)
+  return DEVICE_OS_MAPPING.get(device_name, OS.UNKNOWN)
 
 def get_all_known_os() -> list[OS]:
-  return list(device_os_mapping.values())
+  return list(DEVICE_OS_MAPPING.values())
 ```
 
 Note how the type hints clearly indicate what kind of string is returned here. A user of these functions can now easily identify what kind of values can be returned.
