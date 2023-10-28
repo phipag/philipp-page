@@ -13,7 +13,7 @@ def get_device_os(device_name: str):
   if device_name == "iPhone 15 Pro":
     return "iOS"
   elif device_name == "iPhone 12 Pro Max":
-    return "iOS
+    return "iOS"
   elif device_name == "Google Pixel 8 Pro":
     return "Android"
   elif device_name == "Samsung Galaxy S23":
