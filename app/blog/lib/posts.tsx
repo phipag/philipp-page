@@ -3,8 +3,11 @@ import "server-only";
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
-import { remark } from "remark";
-import html from "remark-html";
+import rehypeStringify from "rehype-stringify";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import { unified } from "unified";
+import rehypeHighlight from "rehype-highlight";
 
 const POSTS_DIRECTORY = path.join(process.cwd(), "posts");
 
@@ -22,8 +25,13 @@ export async function getPostData(slug: string) {
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
 
-  // Use remark to convert markdown into HTML string
-  const processedContent = await remark().use(html).process(matterResult.content);
+  // Use unified pipe to parse markdown into html
+  const processedContent = await unified()
+    .use(remarkParse)
+    .use(remarkRehype)
+    .use(rehypeHighlight)
+    .use(rehypeStringify)
+    .process(matterResult.content);
   const contentHtml = processedContent.toString();
 
   // Combine the data with the id and contentHtml

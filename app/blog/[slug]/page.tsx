@@ -1,5 +1,7 @@
 import "server-only";
 
+import "highlight.js/styles/github-dark.css";
+
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
@@ -21,7 +23,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
           <FontAwesomeIcon icon={faArrowLeft} /> Back to all posts
         </Link>
         <div id="show-navbar"></div>
-        <article className="prose mt-4">
+        <article className="prose mt-4 prose-pre:p-0">
           <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </article>
       </div>
