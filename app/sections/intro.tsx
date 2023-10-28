@@ -23,7 +23,7 @@ export default function Intro() {
           frontier networks <FontAwesomeIcon icon={faUpRightFromSquare} />
         </a>{" "}
         leveraged, for example, in{" "}
-        <a href="https://aws.amazon.com/" className="no-underline hover:text-sky-700" target="_blank">
+        <a href="https://aws.amazon.com/outposts/" className="no-underline hover:text-sky-700" target="_blank">
           AWS Outposts <FontAwesomeIcon icon={faUpRightFromSquare} />
         </a>
         .
