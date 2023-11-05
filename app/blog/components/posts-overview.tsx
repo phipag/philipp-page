@@ -15,14 +15,16 @@ export default function PostsOverview(params: PostsOverviewProps) {
   if (params.limit) posts.splice(params.limit, posts.length - params.limit);
 
   return posts.map((post) => (
-    <div key={post.slug} className="mt-8">
+    <div key={post.slug} className="mt-6">
       <Link href={`/blog/${post.slug}`} className="transition-opacity hover:opacity-60">
         <h2 className="text-3xl font-bold">{post.title}</h2>
       </Link>
 
-      <p className="pt-1 text-sm text-gray-600">{format(post.date, "MMMM dd, yyyy")}</p>
+      <time className="mt-1 block text-sm font-normal leading-none text-gray-600">
+        {format(post.date, "MMMM dd, yyyy")}
+      </time>
 
-      <p className="prose pt-2">{post.excerpt}</p>
+      <p className="prose mt-2">{post.excerpt}</p>
 
       <Link href={`/blog/${post.slug}`} className="font-medium no-underline hover:text-sky-700">
         Read more <FontAwesomeIcon icon={faArrowRight} className="ml-0.5" />

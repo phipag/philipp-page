@@ -1,33 +1,26 @@
 import "server-only";
 
-import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ExternalLink } from "../components/external-link";
 
 export default function Intro() {
   return (
-    <>
-      <h1>Hey there!</h1>
-      <p>
-        Welcome to my website! I&apos;m a software engineer based in Dublin. I hold a M.Sc. in Information Systems from
-        the University of Cologne in Germany. The core principles of my work are building scalable and maintainable
-        software that end-users as well as developers enjoy to use.
+    <div className="leading-relaxed">
+      <h1 className="text-4xl font-extrabold">Hey there!</h1>
+      <p className="mt-4 text-gray-800">
+        Welcome to my website! I&apos;m a Dublin-based software engineer with a M.Sc. in Information Systems from the
+        University of Cologne in Germany. My work revolves around creating scalable and user-friendly software, both for
+        end-users and fellow developers.
       </p>
-      <p>
-        In over 5 years of professional working experience as a freelancer I have consulted clients in building
-        sustainable, cost-efficient cloud-based software solutions to facilitate their business processes.
+      <p className="mt-2 text-gray-800">
+        With over 5 years of freelancing experience, I have advised clients on building sustainable and cost-effective
+        cloud-based software solutions that streamline their business operations.
         {/*TODO: Include references to a portfolio here.*/}
       </p>
-      <p>
-        Currently, at Amazon Web Services (AWS), I contribute to building the software for the next generation of{" "}
-        <a href="https://aws.amazon.com/edge/" className="no-underline hover:text-sky-700" target="_blank">
-          frontier networks <FontAwesomeIcon icon={faUpRightFromSquare} />
-        </a>{" "}
-        leveraged, for example, in{" "}
-        <a href="https://aws.amazon.com/outposts/" className="no-underline hover:text-sky-700" target="_blank">
-          AWS Outposts <FontAwesomeIcon icon={faUpRightFromSquare} />
-        </a>
-        .
+      <p className="mt-2 text-gray-800">
+        Currently, at Amazon Web Services (AWS), I&apos;m involved in developing the software for the next generation of{" "}
+        <ExternalLink href="https://aws.amazon.com/edge/" text="edge networks" /> leveraged, for example, in{" "}
+        <ExternalLink href="https://aws.amazon.com/outposts/" text="AWS Outposts" />.
       </p>
-    </>
+    </div>
   );
 }
