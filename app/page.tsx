@@ -42,9 +42,9 @@ export default function Home() {
       </section>
 
       <section className="container mx-auto my-4 w-full p-4 lg:max-w-screen-lg">
-        <h1 className="text-4xl font-extrabold">Read my thoughts ...</h1>
+        <h1 className="text-4xl font-extrabold">Read my thoughts</h1>
         <p className="mt-4 text-gray-800">
-          I write mostly about technical topics from my life as a software engineer or about personal projects.
+          I write mostly about technical topics inspired from my life as a software engineer and personal projects.
         </p>
         <PostsOverview limit={3} />
       </section>

@@ -1,7 +1,7 @@
 "use client";
 
 import { faAws } from "@fortawesome/free-brands-svg-icons";
-import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faArrowUp, faChalkboardTeacher, faUniversity } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Disclosure } from "@headlessui/react";
 import { ExternalLink } from "../components/external-link";
@@ -32,8 +32,8 @@ export default function RecentExperience() {
                 </p>
                 <p className="mt-1 leading-relaxed text-gray-800">
                   In my day-to-day tasks, I frequently interact with AWS Services like Lambda, SQS, and CloudWatch,
-                  implementing DevOps best practices by utilizing infrastructure-as-code tools such as AWS CDK. I write
-                  code in multiple programming languages including Python, TypeScript, Rust, and Java.
+                  implementing DevOps best practices by utilizing infrastructure-as-code tools such as AWS CDK. I
+                  regularly write code in multiple programming languages including Python, TypeScript, Rust, and Java.
                 </p>
               </Disclosure.Panel>
 
@@ -57,6 +57,7 @@ export default function RecentExperience() {
         className="mt-4"
         title="Student Research Assistant, University of Cologne"
         date="February, 2022 - August, 2022"
+        icon={<FontAwesomeIcon className="h-3 w-3 text-gray-50" icon={faUniversity} />}
       >
         <p className="leading-relaxed text-gray-800">
           As a research and development assistant at the University of Cologne I contributed to different projects
@@ -72,16 +73,17 @@ export default function RecentExperience() {
                   event-based simulation to model electricity markets in a decentralized future. My EV charger model is
                   able to generate charging sessions of electric vehicles based on the hour of the day. Technically, I
                   leveraged open-source data to fit a conditional Gaussian Mixture Model (GMM) to modeling the
-                  probability distribution of charging duration and energy demand. In a smart grid world, this
-                  information can then be used to intelligently charge the vehicles at times of low demand and provide
-                  flexibility to the overall grid.
+                  probability distribution of charging duration and energy demand given the hour of the day. In a smart
+                  grid world, this information can then be used to intelligently charge the vehicles at times of low
+                  demand and provide flexibility to the overall grid.
                 </p>
                 <p className="mt-1 leading-relaxed text-gray-800">
                   A key reason for choosing a GMM were scalability concerns since the Power TAC platform has strict
                   performance requirements on the duration to generate market events. To meet these requirements, I
-                  leveraged the fact that the MVN distribution allows to analytically calculate its conditionals. Based
-                  on this property, I brought the model to production by implementing it in Java (Spring). It was
-                  successfully used in the 2022 Power TAC competition to model a population of 10,000 EV chargers.
+                  leveraged the fact that the multivariate normal distribution allows to analytically calculate its
+                  conditionals. Based on this property, I brought the model to production by implementing it in Java
+                  (Spring). It was successfully used in the 2022 Power TAC competition to model a population of 10,000
+                  EV chargers.
                 </p>
               </Disclosure.Panel>
               <Disclosure.Button className="mt-1 font-medium ring-0 hover:text-sky-700">
@@ -104,6 +106,7 @@ export default function RecentExperience() {
         className="mt-4"
         title="Consultant and Product Owner, Hanseatic Consulting"
         date="March, 2018 - November, 2021"
+        icon={<FontAwesomeIcon className="h-3 w-3 text-gray-50" icon={faChalkboardTeacher} />}
       >
         <p className="leading-relaxed text-gray-800">
           During my time at <ExternalLink href="https://hanseaticconsulting.de" text="Hanseatic Consulting" /> I
@@ -120,7 +123,7 @@ export default function RecentExperience() {
                   production, serving nearly 10,000 customers. In addition to software development, I applied my
                   extensive DevOps and distributed systems knowledge to scale the platform for growing customer traffic.
                   To do that, I established an automated CI/CD process to deploy and scale the application in Google
-                  Cloud leveraging Google Kubernetes Engine (GKE).
+                  Cloud leveraging cloud services such as Google Kubernetes Engine (GKE).
                 </p>
               </Disclosure.Panel>
               <Disclosure.Button className="mt-1 font-medium ring-0 hover:text-sky-700">
