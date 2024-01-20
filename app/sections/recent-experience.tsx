@@ -11,15 +11,16 @@ export default function RecentExperience() {
   return (
     <Timeline className="mt-6">
       <TimelineEntry
-        title="Software Development Engineer I, Amazon Web Services"
+        title="Software Development Engineer II, Amazon Web Services"
         date="September, 2022 - Today"
         icon={<FontAwesomeIcon className="h-3.5 w-3.5 text-gray-50" icon={faAws} />}
         current
       >
         <p className="leading-relaxed text-gray-800">
           After completing two internships during my master studies in Information Systems, I was hired as a full-time
-          Software Development Engineer I (SDE I) at AWS. I am part of the Frontier Networking organization, primarily
-          working on products like AWS Outposts.
+          Software Development Engineer I (SDE I) at AWS in September, 2022. Within my first year after joining, I got
+          promoted to SDE II (my current position). I am part of the Frontier Networking organization, primarily working
+          on products like AWS Outposts.
         </p>
         <Disclosure>
           {({ open }) => (
@@ -31,9 +32,9 @@ export default function RecentExperience() {
                   Outposts.
                 </p>
                 <p className="mt-1 leading-relaxed text-gray-800">
-                  In my day-to-day tasks, I frequently interact with AWS Services like Lambda, SQS, and CloudWatch,
+                  In my day-to-day tasks, I frequently interact with AWS Services like Lambda, ECS, SQS, and CloudWatch,
                   implementing DevOps best practices by utilizing infrastructure-as-code tools such as AWS CDK. I
-                  regularly write code in multiple programming languages including Python, TypeScript, Rust, and Java.
+                  regularly write code in multiple programming languages including Python, TypeScript, Java, and Rust.
                 </p>
               </Disclosure.Panel>
 
@@ -61,17 +62,23 @@ export default function RecentExperience() {
       >
         <p className="leading-relaxed text-gray-800">
           As a research and development assistant at the University of Cologne I contributed to different projects
-          ranging from smart mobility research to energy market simulations.
+          ranging from smart mobility research to energy market simulations. Read my latest publication{" "}
+          <ExternalLink
+            href="https://doi.org/10.1007/978-3-031-39707-3_2"
+            text='"Modeling a Customer Population in Power TAC: Electric Vehicle Chargers"'
+          />
+          .
         </p>
         <Disclosure>
           {({ open }) => (
             <>
               <Disclosure.Panel>
                 <p className="mt-1 leading-relaxed text-gray-800">
-                  One of my most significant contributions was the development of a new electric vehicle (EV) charger
-                  model to the <ExternalLink href="https://powertac.org/" text="Power TAC platform" />. Power TAC is an
-                  event-based simulation to model electricity markets in a decentralized future. My EV charger model is
-                  able to generate charging sessions of electric vehicles based on the hour of the day. Technically, I
+                  One of my most significant contributions in this role was the development of the above mentioned
+                  publication where I contributed a new electric vehicle (EV) charger model to the{" "}
+                  <ExternalLink href="https://powertac.org/" text="Power TAC platform" />. Power TAC is an event-based
+                  simulation to model electricity markets in a decentralized future. My EV charger model is able to
+                  generate charging sessions of electric vehicles based on the hour of the day. Implementation-wise, I
                   leveraged open-source data to fit a conditional Gaussian Mixture Model (GMM) to modeling the
                   probability distribution of charging duration and energy demand given the hour of the day. In a smart
                   grid world, this information can then be used to intelligently charge the vehicles at times of low
