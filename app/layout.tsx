@@ -2,7 +2,7 @@ import "server-only";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import "./globals.css";
 import StickyNav from "./sticky-nav";
 
@@ -14,10 +14,14 @@ export const metadata: Metadata = {
     template: "%s | Philipp Page",
   },
   description: "Philipp Page's personal website.",
-  viewport: "width=device-width, initial-scale=1",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body>
