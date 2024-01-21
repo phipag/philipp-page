@@ -12,7 +12,7 @@ export function generateStaticParams(): { slug: string }[] {
   return getAllPosts().map((post) => ({ slug: post.slug }));
 }
 
-export default async function Post({ params }: { params: { slug: string } }) {
+export default async function Post({ params }: Readonly<{ params: { slug: string } }>) {
   const postData = await getPostData(params.slug);
 
   return (
