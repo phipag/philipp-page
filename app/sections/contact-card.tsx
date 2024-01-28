@@ -1,6 +1,6 @@
 import "server-only";
 
-import { faAws, faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faAws, faGithub, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import philippPageProfilePicture from "../../public/images/philipp-page.jpeg";
@@ -43,7 +43,7 @@ export default function ContactCard() {
           </li>
           <li>
             <a href="https://twitter.com/PagePhilipp" target="_blank">
-              <FontAwesomeIcon className="hover:text-[#1da1f2]" icon={faTwitter} />
+              <FontAwesomeIcon className="hover:text-gray-700" icon={faXTwitter} />
             </a>
           </li>
         </ul>
