@@ -3,7 +3,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import philippPageProfilePicture from "../public/images/philipp-page.jpeg";
 
-import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { Transition } from "@headlessui/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -80,7 +80,7 @@ export default function StickyNav() {
               </li>
               <li>
                 <a href="https://twitter.com/PagePhilipp" target="_blank">
-                  <FontAwesomeIcon className="hover:text-[#1da1f2]" icon={faTwitter} />
+                  <FontAwesomeIcon className="hover:text-gray-700" icon={faXTwitter} />
                 </a>
               </li>
             </ul>
