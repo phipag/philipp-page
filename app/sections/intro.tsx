@@ -7,19 +7,21 @@ export default function Intro() {
     <div className="leading-relaxed">
       <h1 className="text-4xl font-extrabold">Hey there!</h1>
       <p className="mt-4 text-gray-800">
-        Welcome to my website! I&apos;m a Dublin-based software engineer with a M.Sc. in Information Systems from the
-        University of Cologne in Germany. My work revolves around creating scalable and user-friendly software, both for
-        end-users and fellow developers.
-      </p>
-      <p className="mt-2 text-gray-800">
-        With over 5 years of freelancing experience, I have advised clients on building sustainable and cost-effective
-        cloud-based software solutions that streamline their business operations.
-        {/*TODO: Include references to a portfolio here.*/}
-      </p>
-      <p className="mt-2 text-gray-800">
-        Currently, at Amazon Web Services (AWS), I&apos;m involved in developing the software for the next generation of{" "}
+        Welcome to my personal website! My name is Philipp and I currently work as an SA Engineer at AWS where I lead
+        the{" "}
+        <ExternalLink
+          href="https://github.com/aws-powertools/powertools-lambda-java"
+          text="Powertools for AWS Lambda open-source project in Java"
+        />
+        , a developer toolkit helping you to implement Serverless best-practices. Prior to my open-source activities, I
+        built the software for the next generation of{" "}
         <ExternalLink href="https://aws.amazon.com/edge/" text="edge networks" /> leveraged, for example, in{" "}
         <ExternalLink href="https://aws.amazon.com/outposts/" text="AWS Outposts" />.
+      </p>
+      <p className="mt-2 text-gray-800">
+        I have more than 5 years of freelancing experience where I advised clients on building sustainable and
+        cost-effective cloud-based software solutions that streamline their business operations. Read more about me
+        below.
       </p>
     </div>
   );

@@ -28,7 +28,7 @@ export default function ContactCard() {
         </p>
         <ul className="text-gray-800">
           <li>M. Sc. Information Systems 🎓</li>
-          <li>Based in Dublin 🇮🇪</li>
+          <li>Zurich 🇨🇭</li>
         </ul>
         <ul className="flex flex-row gap-x-2 text-2xl text-gray-800">
           <li>

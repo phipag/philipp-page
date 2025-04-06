@@ -11,30 +11,45 @@ export default function RecentExperience() {
   return (
     <Timeline className="mt-6">
       <TimelineEntry
-        title="Software Development Engineer II, Amazon Web Services"
-        date="September, 2022 - Today"
+        title="SA Engineer, Amazon Web Services"
+        date="December, 2024 - Today"
         icon={<FontAwesomeIcon className="h-3.5 w-3.5 text-gray-50" icon={faAws} />}
         current
       >
         <p className="leading-relaxed text-gray-800">
+          Building on my experience as a software engineer, I decided to focus my work on open-source technologies in
+          the Serverless space. In the{" "}
+          <ExternalLink href="https://github.com/aws-powertools" text="Powertools for AWS Lambda team" />, I focus on
+          creating a great developer experience for everyone building on Serverless technologies like AWS Lambda.
+        </p>
+      </TimelineEntry>
+
+      <TimelineEntry
+        className="mt-4"
+        title="Software Development Engineer II, Amazon Web Services"
+        date="September, 2022 - December 2024"
+        icon={<FontAwesomeIcon className="h-3.5 w-3.5 text-gray-50" icon={faAws} />}
+      >
+        <p className="leading-relaxed text-gray-800">
           After completing two internships during my master studies in Information Systems, I was hired as a full-time
           Software Development Engineer I (SDE I) at AWS in September, 2022. Within my first year after joining, I got
-          promoted to SDE II (my current position). I am part of the Frontier Networking organization, primarily working
-          on products like AWS Outposts.
+          promoted to SDE II. As a member of the Frontier Networking organization, I worked together with amazing
+          colleagues on the newest edge-networking technologies leveraged in products like AWS Outposts.
         </p>
         <Disclosure>
           {({ open }) => (
             <>
               <Disclosure.Panel>
                 <p className="mt-1 leading-relaxed text-gray-800">
-                  My responsibilities involve developing the software that establishes connectivity between Amazon data
+                  My responsibilities involved developing the software that establishes connectivity between Amazon data
                   centers and non-standard edge networks, specifically, the customer data center in the case of
                   Outposts.
                 </p>
                 <p className="mt-1 leading-relaxed text-gray-800">
-                  In my day-to-day tasks, I frequently interact with AWS Services like Lambda, ECS, SQS, and CloudWatch,
-                  implementing DevOps best practices by utilizing infrastructure-as-code tools such as AWS CDK. I
-                  regularly write code in multiple programming languages including Python, TypeScript, Java, and Rust.
+                  In my day-to-day tasks, I frequently interacted with AWS Services like Lambda, ECS, SQS, and
+                  CloudWatch, implementing DevOps best practices by utilizing infrastructure-as-code tools such as AWS
+                  CDK. I regularly wrote code in multiple programming languages including Python, TypeScript, Java, and
+                  Rust.
                 </p>
               </Disclosure.Panel>
 
