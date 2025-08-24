@@ -3,7 +3,7 @@
 import { faAws } from "@fortawesome/free-brands-svg-icons";
 import { faArrowDown, faArrowUp, faChalkboardTeacher, faUniversity } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { ExternalLink } from "../components/external-link";
 import Timeline, { TimelineEntry } from "../components/timeline";
 
@@ -13,7 +13,7 @@ export default function RecentExperience() {
       <TimelineEntry
         title="SA Engineer, Amazon Web Services"
         date="December, 2024 - Today"
-        icon={<FontAwesomeIcon className="h-3.5 w-3.5 text-gray-50" icon={faAws} />}
+        icon={<FontAwesomeIcon className="text-gray-50" icon={faAws} size="xs" />}
         current
       >
         <p className="leading-relaxed text-gray-800">
@@ -28,7 +28,7 @@ export default function RecentExperience() {
         className="mt-4"
         title="Software Development Engineer II, Amazon Web Services"
         date="September, 2022 - December 2024"
-        icon={<FontAwesomeIcon className="h-3.5 w-3.5 text-gray-50" icon={faAws} />}
+        icon={<FontAwesomeIcon className="text-gray-50" icon={faAws} size="xs" />}
       >
         <p className="leading-relaxed text-gray-800">
           After completing two internships during my master studies in Information Systems, I was hired as a full-time
@@ -38,8 +38,8 @@ export default function RecentExperience() {
         </p>
         <Disclosure>
           {({ open }) => (
-            <>
-              <Disclosure.Panel>
+            <div>
+              <DisclosurePanel>
                 <p className="mt-1 leading-relaxed text-gray-800">
                   My responsibilities involved developing the software that establishes connectivity between Amazon data
                   centers and non-standard edge networks, specifically, the customer data center in the case of
@@ -51,9 +51,9 @@ export default function RecentExperience() {
                   CDK. I regularly wrote code in multiple programming languages including Python, TypeScript, Java, and
                   Rust.
                 </p>
-              </Disclosure.Panel>
+              </DisclosurePanel>
 
-              <Disclosure.Button className="mt-1 font-medium ring-0 hover:text-sky-700">
+              <DisclosureButton className="mt-1 font-medium ring-0 hover:cursor-pointer hover:text-sky-700">
                 {open ? (
                   <>
                     Read less <FontAwesomeIcon icon={faArrowUp} />
@@ -63,8 +63,8 @@ export default function RecentExperience() {
                     Read more <FontAwesomeIcon icon={faArrowDown} />
                   </>
                 )}
-              </Disclosure.Button>
-            </>
+              </DisclosureButton>
+            </div>
           )}
         </Disclosure>
       </TimelineEntry>
@@ -73,7 +73,7 @@ export default function RecentExperience() {
         className="mt-4"
         title="Student Research Assistant, University of Cologne"
         date="February, 2022 - August, 2022"
-        icon={<FontAwesomeIcon className="h-3 w-3 text-gray-50" icon={faUniversity} />}
+        icon={<FontAwesomeIcon className="text-gray-50" icon={faUniversity} size="xs" />}
       >
         <p className="leading-relaxed text-gray-800">
           As a research and development assistant at the University of Cologne I contributed to different projects
@@ -86,8 +86,8 @@ export default function RecentExperience() {
         </p>
         <Disclosure>
           {({ open }) => (
-            <>
-              <Disclosure.Panel>
+            <div>
+              <DisclosurePanel>
                 <p className="mt-1 leading-relaxed text-gray-800">
                   One of my most significant contributions in this role was the development of the above mentioned
                   publication where I contributed a new electric vehicle (EV) charger model to the{" "}
@@ -107,8 +107,8 @@ export default function RecentExperience() {
                   (Spring). It was successfully used in the 2022 Power TAC competition to model a population of 10,000
                   EV chargers.
                 </p>
-              </Disclosure.Panel>
-              <Disclosure.Button className="mt-1 font-medium ring-0 hover:text-sky-700">
+              </DisclosurePanel>
+              <DisclosureButton className="mt-1 font-medium ring-0 hover:cursor-pointer hover:text-sky-700">
                 {open ? (
                   <>
                     Read less <FontAwesomeIcon icon={faArrowUp} />
@@ -118,8 +118,8 @@ export default function RecentExperience() {
                     Read more <FontAwesomeIcon icon={faArrowDown} />
                   </>
                 )}
-              </Disclosure.Button>
-            </>
+              </DisclosureButton>
+            </div>
           )}
         </Disclosure>
       </TimelineEntry>
@@ -128,7 +128,7 @@ export default function RecentExperience() {
         className="mt-4"
         title="Consultant and Product Owner, Hanseatic Consulting"
         date="March, 2018 - November, 2021"
-        icon={<FontAwesomeIcon className="h-3 w-3 text-gray-50" icon={faChalkboardTeacher} />}
+        icon={<FontAwesomeIcon className="text-gray-50" icon={faChalkboardTeacher} size="xs" />}
       >
         <p className="leading-relaxed text-gray-800">
           During my time at <ExternalLink href="https://hanseaticconsulting.de" text="Hanseatic Consulting" /> I
@@ -137,8 +137,8 @@ export default function RecentExperience() {
         </p>
         <Disclosure>
           {({ open }) => (
-            <>
-              <Disclosure.Panel>
+            <div>
+              <DisclosurePanel>
                 <p className="mt-1 leading-relaxed text-gray-800">
                   As a lead software engineer, I designed and implemented a Software-as-a-Service (SaaS) e-learning
                   platform using React and PHP (Laravel) for a client of the aerospace industry. The platform is now in
@@ -147,8 +147,8 @@ export default function RecentExperience() {
                   To do that, I established an automated CI/CD process to deploy and scale the application in Google
                   Cloud leveraging cloud services such as Google Kubernetes Engine (GKE).
                 </p>
-              </Disclosure.Panel>
-              <Disclosure.Button className="mt-1 font-medium ring-0 hover:text-sky-700">
+              </DisclosurePanel>
+              <DisclosureButton className="mt-1 font-medium ring-0 hover:cursor-pointer hover:text-sky-700">
                 {open ? (
                   <>
                     Read less <FontAwesomeIcon icon={faArrowUp} />
@@ -158,8 +158,8 @@ export default function RecentExperience() {
                     Read more <FontAwesomeIcon icon={faArrowDown} />
                   </>
                 )}
-              </Disclosure.Button>
-            </>
+              </DisclosureButton>
+            </div>
           )}
         </Disclosure>
       </TimelineEntry>

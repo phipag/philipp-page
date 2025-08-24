@@ -9,7 +9,7 @@ export default function ContactCard() {
   return (
     <div className="flex flex-col gap-8 md:flex-row">
       <Image
-        className="h-[15rem] w-[15rem] rounded-full drop-shadow-md"
+        className="h-60 w-60 rounded-full drop-shadow-md"
         src={philippPageProfilePicture}
         alt="Philipp Page picture"
         placeholder="blur"
@@ -27,7 +27,6 @@ export default function ContactCard() {
           </a>
         </p>
         <ul className="text-gray-800">
-          <li>M. Sc. Information Systems 🎓</li>
           <li>Zurich 🇨🇭</li>
         </ul>
         <ul className="flex flex-row gap-x-2 text-2xl text-gray-800">

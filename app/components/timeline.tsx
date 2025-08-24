@@ -3,7 +3,7 @@ function BulletPoint({ icon }: { readonly icon: React.ReactNode }) {
     <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-sky-700 ring-8 ring-white">
       {icon ?? (
         <svg
-          className="h-2.5 w-2.5 text-gray-50"
+          className="text-gray-50"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
@@ -32,12 +32,12 @@ export function TimelineEntry({ title, date, children, current, className, icon 
       <h3 className="mb-1 flex items-center text-lg font-semibold">
         {title}
         {current && (
-          <span className="ml-3 mr-2 rounded bg-sky-700 px-2.5 py-0.5 text-sm font-medium text-gray-50">
+          <span className="mr-2 ml-3 rounded-sm bg-sky-700 px-2.5 py-0.5 text-sm font-medium text-gray-50">
             Current position
           </span>
         )}
       </h3>
-      <time className="mb-2 block text-sm font-normal leading-none text-gray-600">{date}</time>
+      <time className="mb-2 block text-sm leading-none font-normal text-gray-600">{date}</time>
       {children}
     </li>
   );

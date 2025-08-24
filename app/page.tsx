@@ -23,16 +23,16 @@ export default function Home() {
 
       <ShowNavBarBelow />
 
-      <section className="container mx-auto mt-4 p-4 lg:max-w-screen-lg">
+      <section className="container mx-auto mt-4 p-4 lg:max-w-(--breakpoint-lg)">
         <Intro />
       </section>
 
-      <section className="container mx-auto mt-4 p-4 lg:max-w-screen-lg">
+      <section className="container mx-auto mt-4 p-4 lg:max-w-(--breakpoint-lg)">
         <h1 className="text-4xl font-extrabold">My recent experience</h1>
         <RecentExperience />
         <div className="mt-4">
           <a
-            className="inline-block rounded border border-sky-700 p-3 font-medium ring-sky-100 transition-colors hover:bg-gray-100 active:ring-4"
+            className="inline-block rounded-sm border border-sky-700 p-3 font-medium ring-sky-100 transition-colors hover:bg-gray-100 active:ring-4"
             href="https://www.linkedin.com/in/philipp-page/"
             target="_blank"
           >
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto my-4 w-full p-4 lg:max-w-screen-lg">
+      <section className="container mx-auto my-4 w-full p-4 lg:max-w-(--breakpoint-lg)">
         <h1 className="text-4xl font-extrabold">Read my thoughts</h1>
         <p className="mt-4 text-gray-800">
           I write mostly about technical topics inspired by my life as a software engineer and personal projects.

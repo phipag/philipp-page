@@ -1,3 +1,47 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+h3 code {
+  @apply !text-lg md:!text-xl;
+}
+
+code {
+  @apply text-sm leading-relaxed md:text-base;
+}
+
+pre {
+  @apply bg-transparent py-4;
+}
+
+pre > code {
+  counter-reset: line;
+}
+
+figure[data-rehype-pretty-code-figure] {
+  @apply rounded-lg border-2 border-gray-100 bg-gray-50;
+}
+
+pre [data-line] {
+  @apply px-2;
+}
+
+code[data-line-numbers] {
+  counter-reset: line;
+}
+
+code[data-line-numbers] > [data-line]::before {
+  counter-increment: line;
+  content: counter(line);
+  @apply mr-4 inline-block w-4 text-right text-gray-500;
+}
+
+[data-highlighted-line] {
+  @apply bg-sky-100;
+}
+
+[data-rehype-pretty-code-title] {
+  @apply rounded-t-lg bg-sky-700 px-3 py-2 text-sm font-semibold text-gray-100;
+}
+[data-rehype-pretty-code-caption] {
+  @apply mt-0 border-t-2 border-gray-100 bg-auto px-3 py-2 text-sm font-medium;
+}

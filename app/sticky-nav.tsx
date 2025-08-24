@@ -53,7 +53,7 @@ export default function StickyNav() {
       leaveFrom="opacity-100"
       leaveTo="opacity-0"
     >
-      <div className="fixed top-0 z-50 w-full bg-white p-2 shadow transition duration-500">
+      <div className="fixed top-0 z-50 w-full bg-white p-2 shadow-sm transition duration-500">
         <div className="mx-auto flex max-w-prose flex-row items-center justify-start gap-4">
           <Link href="/">
             <Image
