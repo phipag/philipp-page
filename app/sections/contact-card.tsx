@@ -21,7 +21,7 @@ export default function ContactCard() {
           <span className="text-sky-700">Page</span>
         </h1>
         <p className="mt-2 md:text-2xl">
-          Software Engineer at{" "}
+          AI Engineer at{" "}
           <a href="https://aws.amazon.com/" target="_blank">
             <FontAwesomeIcon className="hover:text-[#ff9900]" icon={faAws} />
           </a>

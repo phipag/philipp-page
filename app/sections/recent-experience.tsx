@@ -11,10 +11,22 @@ export default function RecentExperience() {
   return (
     <Timeline className="mt-6">
       <TimelineEntry
-        title="SA Engineer, Amazon Web Services"
-        date="December, 2024 - Today"
+        title="AI Engineer, Amazon Web Services"
+        date="January, 2026 - Today"
         icon={<FontAwesomeIcon className="text-gray-50" icon={faAws} size="xs" />}
         current
+      >
+        <p className="leading-relaxed text-gray-800">
+          In this role, I work on Agentic AI with a focus on the agentic developer lifecycle and open-source
+          development.
+        </p>
+      </TimelineEntry>
+
+      <TimelineEntry
+        className="mt-4"
+        title="SA Engineer, Amazon Web Services"
+        date="December, 2024 - January, 2026"
+        icon={<FontAwesomeIcon className="text-gray-50" icon={faAws} size="xs" />}
       >
         <p className="leading-relaxed text-gray-800">
           Building on my experience as a software engineer, I decided to focus my work on open-source technologies in
