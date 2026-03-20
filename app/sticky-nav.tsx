@@ -69,17 +69,32 @@ export default function StickyNav() {
             </h1>
             <ul className="flex flex-row gap-x-2 text-2xl text-gray-800">
               <li>
-                <a href="https://www.linkedin.com/in/philipp-page/" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/philipp-page/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn profile"
+                >
                   <FontAwesomeIcon className="hover:text-[#0077B5]" icon={faLinkedin} />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/phipag" target="_blank">
+                <a
+                  href="https://github.com/phipag"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub profile"
+                >
                   <FontAwesomeIcon className="hover:text-[#333]" icon={faGithub} />
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/PagePhilipp" target="_blank">
+                <a
+                  href="https://twitter.com/PagePhilipp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="X (Twitter) profile"
+                >
                   <FontAwesomeIcon className="hover:text-gray-700" icon={faXTwitter} />
                 </a>
               </li>

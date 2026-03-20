@@ -5,7 +5,7 @@ import { ExternalLink } from "../components/external-link";
 export default function Intro() {
   return (
     <div className="leading-relaxed">
-      <h1 className="text-4xl font-extrabold">Hey there!</h1>
+      <h2 className="text-4xl font-extrabold">Hey there!</h2>
       <p className="mt-4 text-gray-800">
         My name is Philipp and I currently work as an AI Engineer at AWS where I focus on Agentic AI and lead the{" "}
         <ExternalLink
