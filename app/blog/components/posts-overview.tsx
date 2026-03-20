@@ -24,7 +24,7 @@ export default async function PostsOverview(params: PostsOverviewProps) {
 
   return sortedPosts.map((post) => (
     <div key={post.slug} className="mt-6">
-      <Link href={`/blog/${post.slug}`} className="transition-opacity hover:opacity-60">
+      <Link href={`/blog/${post.slug}`} className="hover:text-sky-700">
         <h2 className="inline-block text-3xl font-bold">{post.frontmatter.title}</h2>
       </Link>
 

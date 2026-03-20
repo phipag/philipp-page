@@ -22,7 +22,7 @@ export default function ContactCard() {
         </h1>
         <p className="mt-2 md:text-2xl">
           AI Engineer at{" "}
-          <a href="https://aws.amazon.com/" target="_blank">
+          <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer" aria-label="Amazon Web Services">
             <FontAwesomeIcon className="hover:text-[#ff9900]" icon={faAws} />
           </a>
         </p>
@@ -31,17 +31,27 @@ export default function ContactCard() {
         </ul>
         <ul className="flex flex-row gap-x-2 text-2xl text-gray-800">
           <li>
-            <a href="https://www.linkedin.com/in/philipp-page/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/philipp-page/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
+            >
               <FontAwesomeIcon className="hover:text-[#0077B5]" icon={faLinkedin} />
             </a>
           </li>
           <li>
-            <a href="https://github.com/phipag" target="_blank">
+            <a href="https://github.com/phipag" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
               <FontAwesomeIcon className="hover:text-[#333]" icon={faGithub} />
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/PagePhilipp" target="_blank">
+            <a
+              href="https://twitter.com/PagePhilipp"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X (Twitter) profile"
+            >
               <FontAwesomeIcon className="hover:text-gray-700" icon={faXTwitter} />
             </a>
           </li>

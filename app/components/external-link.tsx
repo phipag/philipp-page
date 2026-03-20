@@ -8,7 +8,7 @@ export interface ExternalLinkProps {
 
 export function ExternalLink({ href, text }: Readonly<ExternalLinkProps>) {
   return (
-    <a href={href} target="_blank" className="font-medium no-underline hover:text-sky-700">
+    <a href={href} target="_blank" rel="noopener noreferrer" className="font-medium no-underline hover:text-sky-700">
       {text} <FontAwesomeIcon icon={faUpRightFromSquare} />
     </a>
   );
