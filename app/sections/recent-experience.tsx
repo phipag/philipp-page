@@ -11,14 +11,14 @@ export default function RecentExperience() {
   return (
     <Timeline className="mt-6">
       <TimelineEntry
-        title="AI Engineer, Amazon Web Services"
+        title="Senior AI Engineer, Amazon Web Services"
         date="January, 2026 - Today"
         icon={<FontAwesomeIcon className="text-gray-50" icon={faAws} size="xs" />}
         current
       >
         <p className="leading-relaxed text-gray-800">
-          In this role, I work on Agentic AI with a focus on the agentic developer lifecycle and open-source
-          development.
+          I work on autonomous agents across the software development lifecycle and open-source development. I joined
+          the team as an AI Engineer and was promoted to Senior AI Engineer in October, 2026.
         </p>
       </TimelineEntry>
 
