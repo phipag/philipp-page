@@ -7,7 +7,7 @@ export default function Intro() {
     <div className="leading-relaxed">
       <h2 className="text-4xl font-extrabold">Hey there!</h2>
       <p className="mt-4 text-gray-800">
-        My name is Philipp and I currently work as an AI Engineer at AWS where I focus on Agentic AI and lead the{" "}
+        My name is Philipp and I currently work as a Senior AI Engineer at AWS where I focus on Agentic AI and lead the{" "}
         <ExternalLink
           href="https://github.com/aws-powertools/powertools-lambda-java"
           text="Powertools for AWS Lambda open-source project in Java"
